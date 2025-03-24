@@ -1,0 +1,3 @@
+after a dependency instalation is recommended to clear espo cache and restart
+differnce between  rnf and rnc is:
+

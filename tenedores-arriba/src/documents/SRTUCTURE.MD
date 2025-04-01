@@ -39,3 +39,7 @@ const restaurantStack = {
 
 **navigation**
 `AppNavigation.js` main navigation for the app
+
+**Firebase**
+section6
+tenedores-arriba-V1

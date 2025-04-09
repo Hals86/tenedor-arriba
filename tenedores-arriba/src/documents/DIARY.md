@@ -39,3 +39,41 @@ created favorites,account,ranking,search,account stack
 # 13 mar 25
 Screen navigation 
 1. added button to Restaurant screen with consloe.log 
+> 2 ways for navigating through the pages
+Using Props
+1A.  same Stack
+navigation.navigate=> method that allows moving between screens of the app
+(screen.restaurant.addRestaurant)=>screenName.js;
+1B. Diferent location Stack
+for example the code below would navigate from restaurants to the account tab when <button> new restaurant</> is pressed
+    navigation.navigate (screens.account.tab{screen: screen.account.account});
+2 importing {useNavigation} from @react-navigation/native.
+# 24 Mar 25
+
+2. Firebase created
+tenedores-arriba-v1 
+file firebase.js created at Utils folder this file contains the code from firerbase project , const app = initializeApp(firebaseConfig) to const firebaseInitv =...
+    added to App.js import{firebaseInit}
+# 26 Mar 25
+UseGuestScreen.js , LoggedScreen created
+in `AccountScreen`:
+- Created conditional rendering logic to switch between guest/logged states
+- Implemented UseGuestScreen for non-authenticated users
+  - Added login button with navigation to auth screen
+  - Added register button with navigation to registration screen
+- Implemented LoggedScreen for authenticated users
+  - Added user info display
+  - Added logout functionality
+  
+Firebase Implementation Details:
+- Created authentication methods in utils/firebase.js
+- Added user session management
+- Implemented email/password authentication
+- Set up user state persistence
+
+Navigation Flow:
+- AccountScreen -> UseGuestScreen (default for non-auth users)
+- UseGuestScreen -> Login/Register screens
+- After authentication -> LoggedScreen
+
+#  02 APR 25

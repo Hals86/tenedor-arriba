@@ -14,7 +14,8 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.hlegexpo86.tenedores-arriba"
+      "bundleIdentifier": "com.hlegexpo86.tenedores-arriba",
+      "jsEngine": "hermes"
     },
     "android": {
       "adaptiveIcon": {
